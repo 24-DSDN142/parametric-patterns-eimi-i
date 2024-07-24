@@ -1,8 +1,9 @@
 //your parameter variables go here!
 let rect_width  = 20;
 let rect_height = 20;
-
-
+var PetalAngle = 30;
+var PetalLength = 40;
+var PetalWidth = 7;
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.resolution(FIT_TO_SCREEN);
@@ -15,9 +16,45 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(240, 255, 240); //light honeydew green colour
+  background(147,196,125); //light green colour
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  rect(40 ,40, rect_width, rect_height);
+ 
+  // middle of flower
+  fill(300, 250, 100); // light yellow
+  stroke(300, 250, 100); //
+  ellipse(100, 100, 8, 8); //draws a circle
+  //petal
+  stroke('white');
+  fill('white'); //white 
+  ellipse(100, 73, PetalWidth, PetalLength); //first petal
+  push();
+  translate(200 / 2, 200 / 2); //center of the square
+  rotate(PetalAngle); //rotates each petal around
+  ellipse(0, -27, PetalWidth, PetalLength);
+  rotate(PetalAngle);
+  ellipse(0, -27, PetalWidth, PetalLength);
+  rotate(PetalAngle);
+  ellipse(0, -27, PetalWidth, PetalLength);
+  rotate(PetalAngle);
+  ellipse(0, -27, PetalWidth, PetalLength);
+  rotate(PetalAngle);
+  ellipse(0, -27, PetalWidth, PetalLength);
+  rotate(PetalAngle);
+  ellipse(0, -27, PetalWidth, PetalLength);
+  rotate(PetalAngle);
+  ellipse(0, -27, PetalWidth, PetalLength);
+  rotate(PetalAngle);
+  ellipse(0, -27, PetalWidth, PetalLength);
+  rotate(PetalAngle);
+  ellipse(0, -27, PetalWidth, PetalLength);
+  rotate(PetalAngle);
+  ellipse(0, -27, PetalWidth, PetalLength);
+  rotate(PetalAngle);
+  ellipse(0, -27, PetalWidth, PetalLength);
+  pop();
+
 }
+
+
