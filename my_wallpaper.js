@@ -18,21 +18,45 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  // fill(249,89,43); //A deep orange
-  // stroke(249,89,43);
-  //ellipse(200/4,200/2,50,100); //draws an ellipse
+  
+  //right red koi fish
+  fill(249,89,43); //A deep orange
+  stroke(249,89,43);
+  beginShape();
+  vertex(60, 50);
+  quadraticVertex(0, 115, 50, 150);
+  endShape(CLOSE)
+  beginShape();
+  vertex(60,50);
+  bezierVertex(50, 100, 120, 180, 50,150);
+  endShape(CLOSE);
+  //tail
+  beginShape();
 
-  //creates 5 bezier lines for the water ripple
+  endShape(CLOSE);
 
+  //left white koi
+  fill('white');
+  stroke('white');
+
+
+
+  //water ripples
 
   // Draw bottom left white bezier curve for the water ripple
   noFill();
   stroke('white')
-  arc(220/4, 150, 60, 30, 0, 290);
-  arc(220/4, 150, 90, 50, 0, 290);
-  arc(220/4, 150, 120, 70, 0, 290);
-  arc(220/4, 150, 120, 70, 0, 290);
+  strokeWeight(1.5)
+  arc(220/4, 170, 10, 5, 0, 360);
+  arc(220/4, 170, 40, 15, 0, 290);
+  arc(220/4, 170, 70, 30, 0, 100);
+  arc(220/4, 170, 70, 30, 130, -30);
 
+  //bubbles
+  fill(210,230,255)
+  stroke(210,230,255)
+  strokeWeight(1);
+  ellipse(180,150,20,20);
 
   let bubble = false;
   if(bubble <= 20){
@@ -40,6 +64,9 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  }
   else{}
 
+  //ideas for if statements: if (certain co ords) have 3 fish, 
+  //or change colour of existing fish OR include leaf floating in 
+  //the pond like a maple leaf or momiji
 
 }
 
