@@ -23,12 +23,10 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   fill(249,89,43); //A deep orange
   stroke(249,89,43);
   beginShape();
-  vertex(60, 50);
-  quadraticVertex(0, 115, 50, 150);
-  endShape(CLOSE)
-  beginShape();
-  vertex(60,50);
-  bezierVertex(50, 100, 120, 180, 50,150);
+  vertex(50, 50);
+  quadraticVertex(0, 115, 60, 140);
+  quadraticVertex(100, 145, 70, 110);
+  quadraticVertex(40,100,50,50)
   endShape(CLOSE);
   //tail
   beginShape();
