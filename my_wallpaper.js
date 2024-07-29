@@ -24,7 +24,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   //Jellyfish
   push();
   translate(-30,25)
-  rotate(-25)
+  rotate(-29)
 
   //BLUE JELLYFISH
   //head
@@ -41,25 +41,49 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   noFill();
   stroke(183,203,246);
   strokeWeight(0.7);
-  bezier(40,55,15,65,80,90,40,120)
-  bezier(70,55,100,65,40,90,80,120)
-  stroke(180,107,192)
-  bezier(50,55,30,70,90,100,30,110)
-  bezier(65,55,80,70,50,100,90,112)
+  bezier(40,55,15,65,80,90,40,120);
+  bezier(70,55,100,65,40,90,80,120);
+  stroke(180,107,192);
+  bezier(50,55,30,70,90,100,30,110);
+  bezier(65,55,80,70,50,100,90,112);
+  stroke('white');
+  bezier(75,55,110,80,40,90,60,120);
+  bezier(33,55,0,70,70,90,66,130);
 
 
-  fill(183,203,246); //blue jellyfish
-  stroke(183,203,246);
-  ellipse(55,63,10,20);
-  ellipse(55,84,8,18);
-  ellipse(55,104,4,14);
+
+  // ellipse(55,63,10,20);
+  // ellipse(55,84,8,18);
+  // ellipse(55,104,4,14);
   pop();
 
+  
   //PURPLE JELLYFISH
   push();
-  // translate(330,140);
-  // rotate(140);
+  translate(120,45);
+  rotate(20);
   //head
+  fill(180,107,192); 
+  stroke(180,107,192);
+  arc(55, 55, 50, 65, 180,0); //semicircle top of head
+  beginShape(); //bottom part of head
+  vertex(55,55);
+  bezierVertex();
+  bezierVertex();
+  endShape(CLOSE);
+  
+  //legs
+  noFill();
+  stroke(183,203,246);
+  strokeWeight(0.7);
+  bezier(40,55,15,65,80,90,40,120);
+  bezier(70,55,100,65,40,90,80,120);
+  stroke(180,107,192);
+  bezier(50,55,30,70,90,100,30,110);
+  bezier(65,55,80,70,50,100,90,112);
+  stroke('white');
+  bezier(75,55,110,80,40,90,60,120);
+  bezier(33,55,0,70,70,90,66,130);
   fill(180,107,192); //purple jellyfish
   stroke(180,107,192);
   
@@ -70,12 +94,22 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   pop();
 
   //bubbles
-  fill(255,220,255);
-  stroke(240,220,255);
+  fill(183,203,246); //blue bubbles
+  stroke(183,203,246);
+  ellipse(140,19,17,17); //big bubble up top
+  ellipse(30,155,23,23); //big bubble down bottom LEFT
+  ellipse(75,183,5,5)
   ellipse(90,20,3.5,3.5); //small bubble to the top
-  ellipse(140,35,17,17); //big bubble up top
-  ellipse(40,155,20,20); //big bubble down bottom LEFT
   ellipse(14,130,3,3); //small bubble BOTTOM LEFT
+
+  noFill(); //clear bubbles
+  stroke(240,220,255);
+  strokeWeight(2)
+  ellipse(50,165,30,30) //bottom left
+  ellipse(116,37,28,28) //top middle
+  ellipse(165,47,30,30) //top right
+
+
 
   //shines
 
