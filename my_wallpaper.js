@@ -19,46 +19,69 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   
+
+
   //Jellyfish
+  push();
+  // translate(-30,25)
+  // rotate(-25)
 
   //head
+
   fill(183,203,246);
   stroke(183,203,246);
-  ellipse(33,40,25,30)
+  arc(55, 55, 50, 75, 180,0);
+  ellipse()
+
+
+  fill(180,107,192);
+  stroke(180,107,192);
   beginShape();
-  // vertex(20,70)
-  // bezierVertex(20,30,50,0,90,50);
-  vertex(45,60);
-  bezierVertex(-10,100,10,45,20,45);
-  // bezierVertex(15,50,25,5,60,30)
-  bezierVertex()
+  vertex(130,110);
+  quadraticVertex(140,10,150,110);
   endShape(CLOSE);
 
   //legs
-
-
-
-
-  //bubbles
+ 
   fill(183,203,246);
   stroke(183,203,246);
+  ellipse(55,63,10,20)
+  ellipse(55,85,8,18)
+  ellipse(55,106,6,16)
+  ellipse(55,125,4,14)
+  pop()
+
+  //bubbles
+
+  fill(255,220,255);
+  stroke(240,220,255);
   ellipse(90,20,3.5,3.5); //small bubble to the top
   ellipse(140,35,17,17); //big bubble up top
   ellipse(40,155,20,20); //big bubble down bottom LEFT
   ellipse(14,130,3,3); //small bubble BOTTOM LEFT
   Nofill();
 
-
-
   //shines
 
+  fill(183,203,246);
+
+  //highlights D:
 
 
 
 
+  //dead jellyfish
+  // stroke(183,203,246);
+  // beginShape();
+  // vertex(45,55);
+  // bezierVertex(0,100,10,45,20,45);
+  // bezierVertex(15,50,25,5,50,30)
+  // endShape(CLOSE);
 
-
-
+  // beginShape();
+  // vertex(45,25)
+  // bezierVertex(95,30,75,50,40,60);
+  // endShape(CLOSE);
 
 
 
