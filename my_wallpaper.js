@@ -14,47 +14,72 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(180, 215, 255); //light blue colour
+  background(63, 71, 104); //light blue colour
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   
-  //right red koi fish
-  fill(249,89,43); //A deep orange
-  stroke(249,89,43);
+  //Jellyfish
+
+  //head
+  fill(183,203,246);
+  stroke(183,203,246);
+  ellipse(33,40,25,30)
   beginShape();
-  vertex(50, 50);
-  quadraticVertex(0, 115, 60, 140);
-  quadraticVertex(100, 145, 70, 110);
-  quadraticVertex(40,100,50,50)
-  endShape(CLOSE);
-  //tail
-  beginShape();
-
+  // vertex(20,70)
+  // bezierVertex(20,30,50,0,90,50);
+  vertex(45,60);
+  bezierVertex(-10,100,10,45,20,45);
+  // bezierVertex(15,50,25,5,60,30)
+  bezierVertex()
   endShape(CLOSE);
 
-  //left white koi
-  fill('white');
-  stroke('white');
+  //legs
 
 
 
-  //water ripples
-
-  // Draw bottom left white bezier curve for the water ripple
-  noFill();
-  stroke('white')
-  strokeWeight(1.5)
-  arc(220/4, 170, 10, 5, 0, 360);
-  arc(220/4, 170, 40, 15, 0, 290);
-  arc(220/4, 170, 70, 30, 0, 100);
-  arc(220/4, 170, 70, 30, 130, -30);
 
   //bubbles
-  fill(210,230,255)
-  stroke(210,230,255)
-  strokeWeight(1);
-  ellipse(180,150,20,20);
+  fill(183,203,246);
+  stroke(183,203,246);
+  ellipse(90,20,3.5,3.5); //small bubble to the top
+  ellipse(140,35,17,17); //big bubble up top
+  ellipse(40,155,20,20); //big bubble down bottom LEFT
+  ellipse(14,130,3,3); //small bubble BOTTOM LEFT
+  Nofill();
+
+
+
+  //shines
+
+
+
+
+
+
+
+
+
+
+
+
+  // //right red koi fish
+  // fill(249,89,43); //A deep orange
+  // stroke(249,89,43);
+  // beginShape();
+  // vertex(50, 50);
+  // quadraticVertex(0, 115, 60, 140);
+  // quadraticVertex(100, 145, 70, 110);
+  // quadraticVertex(40,100,50,50)
+  // endShape(CLOSE);
+  // //tail
+  // beginShape();
+  // fill(249,89,43);
+  // stroke(249,89,43);
+  // vertex(55,135);
+  // quadraticVertex(50,152,20,123)
+  // quadraticVertex(40,130,50,130)
+  // endShape(CLOSE);
 
   let bubble = false;
   if(bubble <= 20){
