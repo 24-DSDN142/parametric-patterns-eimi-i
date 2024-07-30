@@ -61,10 +61,12 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   //PURPLE JELLYFISH
   push();
   translate(120,45);
-  rotate(20);
+  rotate(30);
   //head
-  fill(180,107,192); 
-  stroke(180,107,192);
+  // fill(180,107,192); 
+  // stroke(180,107,192);
+  fill(183,203,246); 
+  stroke(183,203,246);
   arc(55, 55, 50, 65, 180,0); //semicircle top of head
   beginShape(); //bottom part of head
   vertex(55,55);
