@@ -175,50 +175,12 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 
 
-
-  //dead jellyfish
-  // stroke(183,203,246);
-  // beginShape();
-  // vertex(45,55);
-  // bezierVertex(0,100,10,45,20,45);
-  // bezierVertex(15,50,25,5,50,30)
-  // endShape(CLOSE);
-
-  // beginShape();
-  // vertex(45,25)
-  // bezierVertex(95,30,75,50,40,60);
-  // endShape(CLOSE);
-
-
-
-
-  // //right red koi fish
-  // fill(249,89,43); //A deep orange
-  // stroke(249,89,43);
-  // beginShape();
-  // vertex(50, 50);
-  // quadraticVertex(0, 115, 60, 140);
-  // quadraticVertex(100, 145, 70, 110);
-  // quadraticVertex(40,100,50,50)
-  // endShape(CLOSE);
-  // //tail
-  // beginShape();
-  // fill(249,89,43);
-  // stroke(249,89,43);
-  // vertex(55,135);
-  // quadraticVertex(50,152,20,123)
-  // quadraticVertex(40,130,50,130)
-  // endShape(CLOSE);
-
   let bubble = false;
   if(bubble <= 20){
   //bubble zone
  }
   else{}
 
-  //ideas for if statements: if (certain co ords) have 3 fish, 
-  //or change colour of existing fish OR include leaf floating in 
-  //the pond like a maple leaf or momiji
 
 }
 
