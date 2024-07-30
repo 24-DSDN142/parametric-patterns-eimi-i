@@ -1,16 +1,20 @@
 //your parameter variables go here!
 let rect_width  = 20;
 let rect_height = 20;
+//bubble size
+//jellyfish rotation
+//colour
+//
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
   pWallpaper.grid_settings.cell_height = 200;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.row_offset  = 100;
 }
 
 function wallpaper_background() {
@@ -23,19 +27,55 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
   //Jellyfish
   push();
-  translate(-30,25)
-  rotate(-29)
+  // translate(-30,25)
+  // rotate(-29)
 
   //BLUE JELLYFISH
   //head
+
+
   fill(183,203,246); 
   stroke(183,203,246);
   arc(55, 55, 50, 65, 180,0); //semicircle top of head
+
+  fill(128, 139, 189) //shadow of head
+  stroke(128, 139, 189)
+  beginShape();
+
+  endShape(CLOSE)
+
+  fill(245, 203, 245);
+  stroke(245, 203, 245);
+  beginShape(); //head highlight
+  vertex(55,22.7);
+  bezierVertex(30,20,40,60,40,50);
+  endShape(CLOSE);
+
+  //bottom rim
+  fill(183,203,246); 
+  stroke(183,203,246);
+  ellipse(30,55,10,8);
+  ellipse(40,53,10,8);
+  ellipse(50,52,10,8);
+  ellipse(60,52,10,8);
+  ellipse(70,53,10,8);
+  ellipse(80,53,10,8);
+
+  fill(183,203,246); 
+  stroke(183,203,246);
   beginShape(); //bottom part of head
   vertex(55,55);
-  bezierVertex();
-  bezierVertex();
+  quadraticVertex(55,70,62,80);
+  vertex(48,80)
+  quadraticVertex(55,69,55,25)
   endShape(CLOSE);
+  beginShape(); //bottom
+  vertex(55,80);
+  quadraticVertex(55,100,62,110);
+  vertex(48,110)
+  quadraticVertex(55,99,55,55)
+  endShape(CLOSE);
+
   
   //legs
   noFill();
@@ -48,13 +88,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   bezier(65,55,80,70,50,100,90,112);
   stroke('white');
   bezier(75,55,110,80,40,90,60,120);
-  bezier(33,55,0,70,70,90,66,130);
-
-
-
-  // ellipse(55,63,10,20);
-  // ellipse(55,84,8,18);
-  // ellipse(55,104,4,14);
+  bezier(33,55,0,70,70,90,26,120);
   pop();
 
   
@@ -70,10 +104,30 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   arc(55, 55, 50, 65, 180,0); //semicircle top of head
   beginShape(); //bottom part of head
   vertex(55,55);
-  bezierVertex();
-  bezierVertex();
+  quadraticVertex(55,70,62,80);
+  vertex(48,80)
+  quadraticVertex(55,69,55,25)
   endShape(CLOSE);
-  
+  beginShape(); //bottom
+  vertex(55,80);
+  quadraticVertex(55,100,62,110);
+  vertex(48,110)
+  quadraticVertex(55,99,55,55)
+  endShape(CLOSE);
+
+  fill(128, 139, 189) //shadow of head
+  stroke(128, 139, 189)
+  beginShape();
+  vertex(31,55);
+  quadraticVertex(60,45,55,65);
+  vertex(31,55);
+  endShape(CLOSE);
+  beginShape();
+  vertex(55,65)
+  quadraticVertex(50,45,79,55);
+  vertex(55,65);
+  endShape(CLOSE)
+
   //legs
   noFill();
   stroke(183,203,246);
