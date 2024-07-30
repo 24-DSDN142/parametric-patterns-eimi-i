@@ -25,15 +25,13 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   
 
 
-  //Jellyfish
-  push();
-  // translate(-30,25)
-  // rotate(-29)
-
   //BLUE JELLYFISH
+  push();
+  translate(-30,25)
+  rotate(-29)
+
+
   //head
-
-
   fill(183,203,246); 
   stroke(183,203,246);
   arc(55, 55, 50, 65, 180,0); //semicircle top of head
@@ -96,6 +94,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   push();
   translate(120,45);
   rotate(30);
+
   //head
   // fill(180,107,192); 
   // stroke(180,107,192);
@@ -142,10 +141,6 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   bezier(33,55,0,70,70,90,66,130);
   fill(180,107,192); //purple jellyfish
   stroke(180,107,192);
-  
-
-  //legs
-
 
   pop();
 
@@ -180,7 +175,5 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   //bubble zone
  }
   else{}
-
-
 }
 
