@@ -144,52 +144,52 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   quadraticVertex(55,99,55,55);
   endShape(CLOSE);
 
-//middle of head
-fill(219, 230, 255);
-stroke(219, 230, 255);
-beginShape();
-vertex(33,50)
-quadraticVertex(55,20,78,50);
-endShape(CLOSE);
+  //middle of head
+  fill(219, 230, 255);
+  stroke(219, 230, 255);
+  beginShape();
+  vertex(33,50)
+  quadraticVertex(55,20,78,50);
+  endShape(CLOSE);
 
-//pink head highlights
-fill(245, 203, 245);
-stroke(245, 203, 245);
-beginShape(); 
-vertex(50,25);
-quadraticVertex(35,29,33,50);
-quadraticVertex(43,29,55,25);
-endShape(CLOSE);
-ellipse(65,30,2.5,2.5);
-beginShape();
-vertex(60,33);
-quadraticVertex(80,40,76,50);
-quadraticVertex(70,40,60,33);
-endShape(CLOSE);
+  //pink head highlights
+  fill(245, 203, 245);
+  stroke(245, 203, 245);
+  beginShape(); 
+  vertex(50,25);
+  quadraticVertex(35,29,33,50);
+  quadraticVertex(43,29,55,25);
+  endShape(CLOSE);
+  ellipse(65,30,2.5,2.5);
+  beginShape();
+  vertex(60,33);
+  quadraticVertex(80,40,76,50);
+  quadraticVertex(70,40,60,33);
+  endShape(CLOSE);
 
-//bottom rim
-fill(183,203,246); 
-stroke(183,203,246);
-ellipse(30,55,10,8);
-ellipse(40,53,10,8);
-ellipse(50,52,10,8);
-ellipse(60,52,10,8);
-ellipse(70,53,10,8);
-ellipse(80,53,10,8);
+  //bottom rim
+  fill(183,203,246); 
+  stroke(183,203,246);
+  ellipse(30,55,10,8);
+  ellipse(40,53,10,8);
+  ellipse(50,52,10,8);
+  ellipse(60,52,10,8);
+  ellipse(70,53,10,8);
+  ellipse(80,53,10,8);
 
-//legs
-noFill();
-stroke(183,203,246);
-strokeWeight(0.7);
-bezier(40,55,15,65,80,90,40,120);
-bezier(70,55,100,65,40,90,80,120);
-stroke(180,107,192); //purple
-bezier(50,56.4,30,70,90,100,30,110);
-bezier(65,55,80,70,50,100,90,112);
-stroke('white');
-bezier(75,55,110,80,40,90,60,120);
-bezier(33,59,0,70,70,90,26,120);
-pop();
+  //legs
+  noFill();
+  stroke(183,203,246);
+  strokeWeight(0.7);
+  bezier(40,55,15,65,80,90,40,120);
+  bezier(70,55,100,65,40,90,80,120);
+  stroke(180,107,192); //purple
+  bezier(50,56.4,30,70,90,100,30,110);
+  bezier(65,55,80,70,50,100,90,112);
+  stroke('white');
+  bezier(75,55,110,80,40,90,60,120);
+  bezier(33,59,0,70,70,90,26,120);
+  pop();
 
   //background
 
