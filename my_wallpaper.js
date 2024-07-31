@@ -2,9 +2,9 @@
 let rect_width  = 20;
 let rect_height = 20;
 
-var baseColour = [183,203,246]; // colour for jellyfish 
-var shineColour
-var bubbleColour
+var baseColour = [183,203,246]; // colour for jellyfish and bubble 1
+var bubbleColour = [245, 203, 245]; // pink colour for highlights and bubble 2
+var shineColour = [219, 230, 255]; //colour of snines and inside of jellyfish
 var hX = 55
 var hY = 55
 
@@ -35,17 +35,14 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
-  // let hX = 55
-  // let hY = 55
-
-//BLUE JELLYFISH
+//LEFT JELLYFISH
   push();
   translate(-30,25)
   rotate(-29)
   DrawJellyfish(hX,hY);
   pop();
   
-//PURPLE JELLYFISH
+//RIGHT JELLYFISH
   push();
   translate(120,45);
   rotate(30);
@@ -63,7 +60,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   ellipse(14,130,3,3); //small bubble BOTTOM LEFT
 
 //shines
-  fill(240,220,255);
+  fill(shineColour);
+  stroke(shineColour);
   ellipse(100,100,4,0.5);
   ellipse(100,100,0.5,8);
   ellipse(80,130,5,1);
@@ -78,10 +76,10 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   let bubble = false;
   if(bubble <= 20){
   noFill(); //clear bubbles
-  stroke(240,220,255);
+  stroke(bubbleColour);
   strokeWeight(1.4);
   ellipse(50,165,20,20); //bottom left
-  ellipse(116,37,18,18); //top middle
+  ellipse(116,37,20,20); //top middle
   ellipse(165,47,20,20); //top right
    }
   
@@ -98,56 +96,56 @@ fill(baseColour);
 stroke(baseColour);
 beginShape();
 vertex(headX,headY);
-quadraticVertex(headX,70,62,80);
-vertex(48,80)
-quadraticVertex(headX,69,55,25)
+quadraticVertex(headX,headY + 15,headX + 7,headY + 25);
+vertex(headX - 7,headY + 25)
+quadraticVertex(headX,headX + 14,headX,headY - 30)
 endShape(CLOSE);
 beginShape(); //bottom
-vertex(headX,80);
-quadraticVertex(headX,100,62,110);
-vertex(48,110)
-quadraticVertex(headX,99,headX,headY)
+vertex(headX,headY+25);
+quadraticVertex(headX,headY + 45,headX + 7,headY + 55);
+vertex(headX - 7,headY + 55)
+quadraticVertex(headX,headY + 44,headX,headY)
 endShape(CLOSE);
 //middle of head
-fill(219, 230, 255);
-stroke(219, 230, 255)
+fill(shineColour);
+stroke(shineColour);
 beginShape();
-vertex(33,50)
-quadraticVertex(headX,20,78,50);
+vertex(headX - 22, headY - 5)
+quadraticVertex(headX,headY - 35,headX + 23,headY - 5);
 endShape(CLOSE);
 //pink head highlights
-fill(245, 203, 245); //pink
-stroke(245, 203, 245);
+fill(bubbleColour); //pink
+stroke(bubbleColour);
 beginShape(); 
-vertex(50,25);
-quadraticVertex(35,29,33,50);
-quadraticVertex(43,29,headX,25);
+vertex(headX - 5,headY - 30);
+quadraticVertex(headX - 20,headY - 26,headX - 22,headY - 5);
+quadraticVertex(headX - 12,headY - 26,headX,headY - 30);
 endShape(CLOSE);
-ellipse(65,30,2.5,2.5);
+ellipse(headX + 10,headY - 25,2.5,2.5);
 beginShape();
-vertex(60,33);
-quadraticVertex(80,40,76,50);
-quadraticVertex(70,40,60,33);
+vertex(headX + 5,headY - 22);
+quadraticVertex(headX + 25,headY - 15,headX + 21,headY - 5);
+quadraticVertex(headX + 15,headY - 15,headX + 5,headY - 22);
 endShape(CLOSE);
 //bottom rim
 fill(baseColour); //blue
 stroke(baseColour);
-ellipse(30,headY,10,8);
-ellipse(40,53,10,8);
-ellipse(50,52,10,8);
-ellipse(60,52,10,8);
-ellipse(70,53,10,8);
-ellipse(80,53,10,8);
+ellipse(headX - 25, headY,10,8);
+ellipse(headX - 15, headY - 2,10,8);
+ellipse(headX - 5, headY - 3,10,8);
+ellipse(headX + 5, headY - 3,10,8);
+ellipse(headX + 15, headY - 2,10,8);
+ellipse(headX + 25, headY - 2,10,8);
 //legs
 noFill();
 stroke(baseColour); //blue
 strokeWeight(0.7); 
-bezier(40,55,15,65,80,90,40,120);
-bezier(70,55,100,65,40,90,80,120);
-stroke(180,107,192); //purple
-bezier(50,56.4,30,70,90,100,30,110);
-bezier(65,55,80,70,50,100,90,112);
-stroke('white'); //white
-bezier(75,55,110,80,40,90,60,120);
-bezier(33,59,0,70,70,90,26,120);
+bezier(headX - 15, headY, headX - 40, headY + 10, headX + 25, headY + 35, headX - 15, headY + 65);
+bezier(headX + 15, headY, headX + 45, headY + 10, headX - 15, headY + 35, headX + 25, headY + 65);
+stroke(bubbleColour); //pink
+bezier(headX - 5, headY + 1.4, headX - 25, headY + 15, headX + 35, headY + 45, headX - 25, headY + 55);
+bezier(headX + 10, headY, headX + 25, headY + 15, headX - 5, headY + 45, headX + 35, headY + 57);
+stroke(shineColour); //light blue
+bezier(headX + 20, headY, headX + 55, headY + 25, headX - 15, headY + 35, headX + 5, headY + 65);
+bezier(headX - 22, headY + 4, headX - 55, headY + 15, headX + 15, headY + 35, headX - 29, headY + 65);
 }
