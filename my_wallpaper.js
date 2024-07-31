@@ -1,25 +1,25 @@
 //your parameter variables go here!
-let baseColour = [183,203,246]; // colour for jellyfish and bubble 1
-let bubbleColour = [245, 203, 245]; // colour for highlights and bubble 2
-let shineColour = [219, 230, 255]; //colour of shines and inside of jellyfish
-let backgroundColour = [63, 71, 104];
-let hX = 45; //jellyfish x axis
-let hY = 40; //jellyfish y axis
+let baseColour = [248,173,157]; // colour for jellyfish and bubble 1
+let bubbleColour = [255,218,185]; // colour for highlights and bubble 2
+let shineColour = [251,196,173]; //colour of shines and inside of jellyfish
+let backgroundColour = [57,24,28];
+let hX = 67; //jellyfish x axis
+let hY = 10; //jellyfish y axis
 let hx = 65
-let hy = -80
-let bubbleSize = 18 //bubble size for both bubble types 
-let tentacleWidth = 3
-let LjellyfishAngle = -35
-let RjellyfishAngle = 140
+let hy = -90
+let bubbleSize = 20 //bubble size for both bubble types 
+let tentacleWidth = 1.5
+let LjellyfishAngle = 0
+let RjellyfishAngle = 145
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 190;
-  pWallpaper.grid_settings.cell_height = 160;
+  pWallpaper.grid_settings.cell_height = 190;
   pWallpaper.grid_settings.row_offset  = 80;
 }
 
@@ -62,6 +62,9 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
    ellipse(50,165,bubbleSize,bubbleSize); //bottom left
    ellipse(116,37,bubbleSize,bubbleSize); //top middle
    ellipse(165,47,bubbleSize,bubbleSize); //top right
+   ellipse(100,80,10,10);
+   ellipse(30,130,bubbleSize,bubbleSize)
+   ellipse(100,180,15,15);
    } else if(bubbleSize <= 19){
     fill(baseColour); //blue bubbles
     stroke(baseColour);
@@ -139,5 +142,4 @@ ellipse(headX - 5, headY - 3,10,8);
 ellipse(headX + 5, headY - 3,10,8);
 ellipse(headX + 15, headY - 2,10,8);
 ellipse(headX + 25, headY - 2,10,8);
-
 }
