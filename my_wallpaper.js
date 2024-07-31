@@ -1,15 +1,22 @@
 //your parameter variables go here!
 let rect_width  = 20;
 let rect_height = 20;
+
+// var bubbleSize = ;
+// var shineSize = ;
+// var tentacleWidth = ; 
+// var tentacleLength = ;
+// var rimSize = ;
+
 //bubble size
 //jellyfish rotation
 //colour
 //
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -23,27 +30,17 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   
-
+  //notes must have 5 parameters
+  //at least 1 if statement
 
   //BLUE JELLYFISH
   push();
   translate(-30,25)
   rotate(-29)
-
-
   //head
   fill(183,203,246); 
   stroke(183,203,246);
   arc(55, 55, 50, 65, 180,0); //semicircle top of head
-
-  fill(128, 139, 189) //shadow of head
-  stroke(128, 139, 189)
-  beginShape();
-  vertex();
-
-  quadraticVertex();
-
-  endShape(CLOSE)
   
   //triangle middle leg thing
   fill(183,203,246); 
@@ -119,15 +116,6 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   stroke(183,203,246);
   arc(55, 55, 50, 65, 180,0); //semicircle top of head
 
-  fill(128, 139, 189); //shadow of head
-  stroke(128, 139, 189);
-  beginShape();
-  vertex();
-
-  quadraticVertex();
-
-  endShape(CLOSE);
-
   //triangle middle leg thing
   fill(183,203,246); 
   stroke(183,203,246);
@@ -202,15 +190,6 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   ellipse(90,20,3.5,3.5); //small bubble to the top
   ellipse(14,130,3,3); //small bubble BOTTOM LEFT
 
-  noFill(); //clear bubbles
-  stroke(240,220,255);
-  strokeWeight(1.4);
-  ellipse(50,165,20,20); //bottom left
-  ellipse(116,37,18,18); //top middle
-  ellipse(165,47,20,20); //top right
-
-
-
   //shines
   fill(240,220,255);
   ellipse(100,100,4,0.5);
@@ -227,6 +206,12 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   let bubble = false;
   if(bubble <= 20){
   //bubble zone
+  noFill(); //clear bubbles
+  stroke(240,220,255);
+  strokeWeight(1.4);
+  ellipse(50,165,20,20); //bottom left
+  ellipse(116,37,18,18); //top middle
+  ellipse(165,47,20,20); //top right
  }
   else{}
 }
