@@ -2,6 +2,13 @@
 let rect_width  = 20;
 let rect_height = 20;
 
+var baseColour = [183,203,246]; // colour for jellyfish 
+var shineColour
+var bubbleColour
+var hX = 55
+var hY = 55
+
+
 // var bubbleSize = ;
 // var shineSize = ;
 // var tentacleWidth = ; 
@@ -10,11 +17,9 @@ let rect_height = 20;
 
 //bubble size
 //jellyfish rotation
-//colour
-//
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
@@ -30,8 +35,8 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
-  let hX = 55
-  let hY = 55
+  // let hX = 55
+  // let hY = 55
 
 //BLUE JELLYFISH
   push();
@@ -49,8 +54,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 //background
 //bubbles
-  fill(183,203,246); //blue bubbles
-  stroke(183,203,246);
+  fill(baseColour); //blue bubbles
+  stroke(baseColour);
   ellipse(140,19,12,12); //big bubble up top
   ellipse(30,155,17,17); //big bubble down bottom LEFT
   ellipse(75,183,5,5);
@@ -84,14 +89,13 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 }
 
 function DrawJellyfish(headX,headY) {
-
 //head
-fill(183,203,246); 
-stroke(183,203,246);
+fill(baseColour); 
+stroke(baseColour);
 arc(headX, headY, 50, 65, 180,0); //semicircle top of head
 //triangle middle leg thing
-fill(183,203,246); 
-stroke(183,203,246);
+fill(baseColour); 
+stroke(baseColour);
 beginShape();
 vertex(headX,headY);
 quadraticVertex(headX,70,62,80);
@@ -126,8 +130,8 @@ quadraticVertex(80,40,76,50);
 quadraticVertex(70,40,60,33);
 endShape(CLOSE);
 //bottom rim
-fill(183,203,246); //blue
-stroke(183,203,246);
+fill(baseColour); //blue
+stroke(baseColour);
 ellipse(30,headY,10,8);
 ellipse(40,53,10,8);
 ellipse(50,52,10,8);
@@ -136,7 +140,7 @@ ellipse(70,53,10,8);
 ellipse(80,53,10,8);
 //legs
 noFill();
-stroke(183,203,246); //blue
+stroke(baseColour); //blue
 strokeWeight(0.7); 
 bezier(40,55,15,65,80,90,40,120);
 bezier(70,55,100,65,40,90,80,120);
