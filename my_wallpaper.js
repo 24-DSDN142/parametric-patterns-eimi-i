@@ -11,9 +11,9 @@ var bubbleSize = 20
 var shineSize
 var tentacleWidth = 2
 
-// var rimSize = ;
 
-//bubble size
+
+
 //jellyfish rotation
 
 function setup_wallpaper(pWallpaper) {
@@ -48,13 +48,9 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   pop();
 
 //background
-//bubbles
- 
 //shines
   fill(shineColour);
   stroke(shineColour);
-  ellipse(100,100,4,0.5);
-  ellipse(100,100,0.5,8);
   ellipse(80,130,5,1);
   ellipse(80,130,1,10);
   ellipse(170,180,5,1);
