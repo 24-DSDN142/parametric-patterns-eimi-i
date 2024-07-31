@@ -5,21 +5,19 @@ let rect_height = 20;
 var baseColour = [183,203,246]; // colour for jellyfish and bubble 1
 var bubbleColour = [245, 203, 245]; // pink colour for highlights and bubble 2
 var shineColour = [219, 230, 255]; //colour of snines and inside of jellyfish
-var hX = 55
-var hY = 55
+var hX = 55; //jellyfish x axis
+var hY = 55; //jellyfish y axis
+var bubbleSize = 20
+var shineSize
+var tentacleWidth = 2
 
-
-// var bubbleSize = ;
-// var shineSize = ;
-// var tentacleWidth = ; 
-// var tentacleLength = ;
 // var rimSize = ;
 
 //bubble size
 //jellyfish rotation
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
@@ -51,14 +49,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 //background
 //bubbles
-  fill(baseColour); //blue bubbles
-  stroke(baseColour);
-  ellipse(140,19,12,12); //big bubble up top
-  ellipse(30,155,17,17); //big bubble down bottom LEFT
-  ellipse(75,183,5,5);
-  ellipse(90,20,3.5,3.5); //small bubble to the top
-  ellipse(14,130,3,3); //small bubble BOTTOM LEFT
-
+ 
 //shines
   fill(shineColour);
   stroke(shineColour);
@@ -73,14 +64,23 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   ellipse(19,100,10,1.5);
   ellipse(19,100,1.5,15); 
 
-  let bubble = false;
-  if(bubble <= 20){
-  noFill(); //clear bubbles
-  stroke(bubbleColour);
-  strokeWeight(1.4);
-  ellipse(50,165,20,20); //bottom left
-  ellipse(116,37,20,20); //top middle
-  ellipse(165,47,20,20); //top right
+   if(bubbleSize > 19){
+   noFill(); //clear bubbles
+   stroke(bubbleColour);
+   strokeWeight(1.4);
+   ellipse(50,165,bubbleSize,bubbleSize); //bottom left
+   ellipse(116,37,bubbleSize,bubbleSize); //top middle
+   ellipse(165,47,bubbleSize,bubbleSize); //top right
+   }
+  else {
+   fill(baseColour); //blue bubbles
+   stroke(baseColour);
+   ellipse(140,19,bubbleSize - 8, bubbleSize - 8); //big bubble up top
+   ellipse(30,155,17,17); //big bubble down bottom LEFT
+   ellipse(75,183,bubbleSize - 15,bubbleSize - 15);
+   ellipse(90,20,3.5,3.5); //small bubble to the top
+   ellipse(14,130,3,3); //small bubble BOTTOM LEFT
+
    }
   
 
@@ -139,7 +139,7 @@ ellipse(headX + 25, headY - 2,10,8);
 //legs
 noFill();
 stroke(baseColour); //blue
-strokeWeight(0.7); 
+strokeWeight(tentacleWidth); 
 bezier(headX - 15, headY, headX - 40, headY + 10, headX + 25, headY + 35, headX - 15, headY + 65);
 bezier(headX + 15, headY, headX + 45, headY + 10, headX - 15, headY + 35, headX + 25, headY + 65);
 stroke(bubbleColour); //pink
