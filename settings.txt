@@ -10,47 +10,56 @@ Your final settings.txt will look something like this when you are finished:
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+let baseColour = [183,203,246]; // colour for jellyfish and bubble 1
+let bubbleColour = [245, 203, 245]; // colour for highlights and bubble 2
+let shineColour = [219, 230, 255]; //colour of shines and inside of jellyfish
+let backgroundColour = [63, 71, 104];
+let hX = 45; //jellyfish x axis
+let hY = 40; //jellyfish y axis
+let hx = 45
+let hy = 60
+let bubbleSize = 20 //bubble size for both bubble types 
+let tentacleWidth = 3
+let LjellyfishAngle = -35
+let RjellyfishAngle = 40
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width  = 190;
+  pWallpaper.grid_settings.cell_height = 190;
+  pWallpaper.grid_settings.row_offset  = 100;
 }
 
 /////////////////////////////////
 
 Wallpaper 2:
 
-//your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+let baseColour = [183,203,246]; // colour for jellyfish and bubble 1
+let bubbleColour = [245, 203, 245]; // colour for highlights and bubble 2
+let shineColour = [219, 230, 255]; //colour of shines and inside of jellyfish
+let backgroundColour = [63, 71, 104];
+let hX = 45; //jellyfish x axis
+let hY = 40; //jellyfish y axis
+let hx = 45
+let hy = 60
+let bubbleSize = 18 //bubble size for both bubble types 
+let tentacleWidth = 3
+let LjellyfishAngle = -35
+let RjellyfishAngle = 40
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_width  = 190;
+  pWallpaper.grid_settings.cell_height = 160;
+  pWallpaper.grid_settings.row_offset  = 50;
 }
 
 /////////////////////////////////

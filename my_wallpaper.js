@@ -5,22 +5,22 @@ let shineColour = [219, 230, 255]; //colour of shines and inside of jellyfish
 let backgroundColour = [63, 71, 104];
 let hX = 45; //jellyfish x axis
 let hY = 40; //jellyfish y axis
-let hx = 45
-let hy = 60
-let bubbleSize = 20 //bubble size for both bubble types 
+let hx = 65
+let hy = -80
+let bubbleSize = 18 //bubble size for both bubble types 
 let tentacleWidth = 3
 let LjellyfishAngle = -35
-let RjellyfishAngle = 40
+let RjellyfishAngle = 140
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 190;
-  pWallpaper.grid_settings.cell_height = 190;
-  pWallpaper.grid_settings.row_offset  = 100;
+  pWallpaper.grid_settings.cell_height = 160;
+  pWallpaper.grid_settings.row_offset  = 80;
 }
 
 function wallpaper_background() {
@@ -70,6 +70,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
     ellipse(75,183,bubbleSize - 15,bubbleSize - 15);
     ellipse(90,20,3.5,3.5); //small bubble to the top
     ellipse(14,130,3,3); //small bubble BOTTOM LEFT
+    ellipse(160,50,10,10);
+    ellipse(110,40,15,15);
    }
   
 }
@@ -86,7 +88,7 @@ beginShape();
 vertex(headX,headY);
 quadraticVertex(headX,headY + 15,headX + 7,headY + 25);
 vertex(headX - 7,headY + 25)
-quadraticVertex(headX,headX + 14,headX,headY - 30)
+quadraticVertex(headX,headY + 14,headX,headY - 30)
 endShape(CLOSE);
 beginShape(); //bottom
 vertex(headX,headY+25);
