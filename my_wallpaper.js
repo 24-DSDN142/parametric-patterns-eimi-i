@@ -2,7 +2,7 @@
 let baseColour = [182, 163, 233]; // colour for jellyfish and bubble type 1
 let bubbleColour = [250, 245, 181]; // colour for highlights and bubble type 2
 let shineColour = [213, 201, 245]; //colour of shines and inside of jellyfish
-let backgroundColour = [193, 174, 144];
+let backgroundColour = [37, 34, 54];
 let hX = 45; //jellyfish x axis
 let hY = 40; //jellyfish y axis
 let hx = 55
@@ -19,9 +19,10 @@ function setup_wallpaper(pWallpaper) {
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 190;
-  pWallpaper.grid_settings.cell_height = 170;
+  pWallpaper.grid_settings.cell_height = 190;
   pWallpaper.grid_settings.row_offset  = 40;
 }
+
 
 
 function wallpaper_background() {
