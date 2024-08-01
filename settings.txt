@@ -30,6 +30,7 @@ function setup_wallpaper(pWallpaper) {
 /////////////////////////////////
 
 Wallpaper 2: (light)
+
 //your parameter variables go here!
 let baseColour = [205,226,238]; // changes the base colour for jellyfish and regular filled bubbles
 let bubbleColour = [245, 203, 245]; // changes the colour for jellyfish highlights and the outline for clear bubble 
