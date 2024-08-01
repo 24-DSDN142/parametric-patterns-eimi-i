@@ -40,7 +40,7 @@ Wallpaper 2: (light)
 //your parameter variables go here!
 let baseColour = [205,226,238]; // colour for jellyfish and bubble 1
 let bubbleColour = [245, 203, 245]; // colour for highlights and bubble 2
-let shineColour = [219, 230, 255]; //colour of shines and inside of jellyfish
+let shineColour = [219, 230, 255]; //colour of shines and inside of jellyfish (251,252,213)
 let backgroundColour = [178,203,236];
 let hX = 45; //jellyfish x axis
 let hY = 40; //jellyfish y axis
@@ -64,7 +64,7 @@ function setup_wallpaper(pWallpaper) {
 
 /////////////////////////////////
 
-WALLPAPER 3 (red)
+Wallpaper 3: (red)
 
 //your parameter variables go here!
 let baseColour = [248,173,157]; // colour for jellyfish and bubble 1
@@ -125,23 +125,28 @@ function setup_wallpaper(pWallpaper) {
 Wallpaper 5:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+let baseColour = [205,226,238]; // colour for jellyfish and bubble 1
+let bubbleColour = [245, 203, 245]; // colour for highlights and bubble 2
+let shineColour = [219, 230, 255]; //colour of shines and inside of jellyfish
+let backgroundColour = [178,203,236];
+let hX = 45; //jellyfish x axis
+let hY = 40; //jellyfish y axis
+let hx = 55
+let hy = 60
+let bubbleSize = 19 //bubble size for both bubble types 
+let tentacleWidth = 2
+let LjellyfishAngle = -35
+let RjellyfishAngle = 45
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_width  = 190;
+  pWallpaper.grid_settings.cell_height = 170;
+  pWallpaper.grid_settings.row_offset  = 40;
 }
 
 /////////////////////////////////

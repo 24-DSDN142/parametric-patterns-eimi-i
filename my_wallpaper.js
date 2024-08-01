@@ -1,8 +1,8 @@
 //your parameter variables go here!
-let baseColour = [183,181,228]; // colour for jellyfish and bubble 1
-let bubbleColour = [187,194,226]; // colour for highlights and bubble 2
-let shineColour = [183,181,228]; //colour of shines and inside of jellyfish
-let backgroundColour = [50,46,24];
+let baseColour = [182,163,233]; // colour for jellyfish and bubble 1
+let bubbleColour = [250,245,181]; // colour for highlights and bubble 2
+let shineColour = [213, 201, 245]; //colour of shines and inside of jellyfish
+let backgroundColour = [193,174,144];
 let hX = 45; //jellyfish x axis
 let hY = 40; //jellyfish y axis
 let hx = 55
