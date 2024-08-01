@@ -1,16 +1,16 @@
 //your parameter variables go here!
-let baseColour = [182, 163, 233]; // colour for jellyfish and bubble type 1
-let bubbleColour = [250, 245, 181]; // colour for highlights and bubble type 2
-let shineColour = [213, 201, 245]; //colour of shines and inside of jellyfish
-let backgroundColour = [37, 34, 54];
+let baseColour = [211, 208, 203]; // colour for jellyfish and bubble type 1
+let bubbleColour = [150, 217, 204]; // colour for highlights and bubble type 2
+let shineColour = [231, 229, 223]; //colour of shines and inside of jellyfish
+let backgroundColour = [57, 62, 65];
 let hX = 45; //jellyfish x axis
 let hY = 40; //jellyfish y axis
 let hx = 55
-let hy = 60
-let bubbleSize = 19 //bubble size for both bubble types 
+let hy = -90
+let bubbleSize = 20 //bubble size for both bubble types 
 let tentacleWidth = 2
 let LjellyfishAngle = -35
-let RjellyfishAngle = 45
+let RjellyfishAngle = 145
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -20,7 +20,7 @@ function setup_wallpaper(pWallpaper) {
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 190;
   pWallpaper.grid_settings.cell_height = 190;
-  pWallpaper.grid_settings.row_offset  = 40;
+  pWallpaper.grid_settings.row_offset  = 100;
 }
 
 
