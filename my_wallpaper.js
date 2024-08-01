@@ -1,25 +1,25 @@
 //your parameter variables go here!
-let baseColour = [144, 85, 162]; // changes the base colour for jellyfish and regular filled bubbles
-let bubbleColour = [212, 153, 185]; // changes the colour for jellyfish highlights and the outline for clear bubble 
-let shineColour = [46, 41, 78]; // changes the colour of shines in background and the inside of jellyfish. (251,252,213)
-let backgroundColour = [1, 22, 56]; //changes the colour of the background
-let hX = -15; //moves left jellyfish along the x axis
-let hY = -110; //moves the left jellyfish along the y axis
-let hx = -90; //moves the right jellyfish along the x axis
-let hy = 20; //moves the right jellyfish along the y axis
+let baseColour = [255,197,225]; // changes the base colour for jellyfish and regular filled bubbles
+let bubbleColour = [247, 240, 195]; // changes the colour for jellyfish highlights and the outline for clear bubble 
+let shineColour = [255, 219, 237]; // changes the colour of shines in background and the inside of jellyfish.
+let backgroundColour = [121, 139, 199]; //changes the colour of the background
+let hX = 67; //moves left jellyfish along the x axis
+let hY = 10; //moves the left jellyfish along the y axis
+let hx = 65; //moves the right jellyfish along the x axis
+let hy = -90; //moves the right jellyfish along the y axis
 let bubbleSize = 20; //bubble size for both bubble types 
-let tentacleWidth = 2; //changes the width of jellyfish legs / tentacles
-let LjellyfishAngle = 115;
-let RjellyfishAngle = -60;
+let tentacleWidth = 1.5; //changes the width of jellyfish legs / tentacles
+let LjellyfishAngle = 0;
+let RjellyfishAngle = 145;
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
   pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 190;
-  pWallpaper.grid_settings.cell_height = 170;
+  pWallpaper.grid_settings.cell_height = 190;
   pWallpaper.grid_settings.row_offset  = 100;
 }
 

@@ -60,10 +60,10 @@ function setup_wallpaper(pWallpaper) {
 Wallpaper 3: (green)
 
 //your parameter variables go here!
-let baseColour = [16, 79, 85]; // changes the base colour for jellyfish and regular filled bubbles
-let bubbleColour = [50, 116, 109]; // changes the colour for jellyfish highlights and the outline for clear bubble 
-let shineColour = [158, 197, 171]; // changes the colour of shines in background and the inside of jellyfish.
-let backgroundColour = [1, 32, 15]; //changes the colour of the background
+let baseColour = [64, 121, 140]; // changes the base colour for jellyfish and regular filled bubbles
+let bubbleColour = [207, 215, 199]; // changes the colour for jellyfish highlights and the outline for clear bubble 
+let shineColour = [112, 169, 161]; // changes the colour of shines in background and the inside of jellyfish.
+let backgroundColour = [44, 36, 66]; //changes the colour of the background
 let hX = 67; //moves left jellyfish along the x axis
 let hY = 20; //moves the left jellyfish along the y axis
 let hx = 65; //moves the right jellyfish along the x axis
