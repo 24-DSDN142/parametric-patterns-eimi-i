@@ -1,8 +1,8 @@
 //your parameter variables go here!
-let baseColour = [248,173,157]; // changes the base colour for jellyfish and regular filled bubbles
-let bubbleColour = [255,218,185]; // changes the colour for jellyfish highlights and the outline for clear bubble 
-let shineColour = [251,196,173]; // changes the colour of shines in background and the inside of jellyfish.
-let backgroundColour = [143,84,90]; //changes the colour of the background
+let baseColour = [16, 79, 85]; // changes the base colour for jellyfish and regular filled bubbles
+let bubbleColour = [50, 116, 109]; // changes the colour for jellyfish highlights and the outline for clear bubble 
+let shineColour = [158, 197, 171]; // changes the colour of shines in background and the inside of jellyfish.
+let backgroundColour = [1, 32, 15]; //changes the colour of the background
 let hX = 67; //moves left jellyfish along the x axis
 let hY = 20; //moves the left jellyfish along the y axis
 let hx = 65; //moves the right jellyfish along the x axis
