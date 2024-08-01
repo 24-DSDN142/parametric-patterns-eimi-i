@@ -1,8 +1,8 @@
 //your parameter variables go here!
-let baseColour = [182,163,233]; // colour for jellyfish and bubble 1
-let bubbleColour = [250,245,181]; // colour for highlights and bubble 2
+let baseColour = [182, 163, 233]; // colour for jellyfish and bubble type 1
+let bubbleColour = [250, 245, 181]; // colour for highlights and bubble type 2
 let shineColour = [213, 201, 245]; //colour of shines and inside of jellyfish
-let backgroundColour = [193,174,144];
+let backgroundColour = [193, 174, 144];
 let hX = 45; //jellyfish x axis
 let hY = 40; //jellyfish y axis
 let hx = 55
@@ -31,14 +31,14 @@ function wallpaper_background() {
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 //LEFT JELLYFISH
   push();
-  translate(-30,25)
+  translate(-30, 25)
   rotate(LjellyfishAngle)
   DrawJellyfish(hX,hY);
   pop();
   
 //RIGHT JELLYFISH
   push();
-  translate(140,35);
+  translate(140, 35);
   rotate(RjellyfishAngle);
   DrawJellyfish(hx,hy);
   pop();
@@ -47,11 +47,11 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 //shines
   fill(shineColour);
   stroke(shineColour);
-  ellipse(80,130,5,1);
-  ellipse(80,130,1,10);
-  ellipse(170,180,5,1);
-  ellipse(170,180,1,10);
-  ellipse(185,150,2,20);
+  ellipse(80, 130, 5, 1);
+  ellipse(80, 130, 1, 10);
+  ellipse(170, 180, 5, 1);
+  ellipse(170, 180, 1, 10);
+  ellipse(185, 150, 2, 20);
   ellipse(185,150,10,2);
   ellipse(19,100,10,1.5);
   ellipse(19,100,1.5,15); 
@@ -66,7 +66,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
    ellipse(100,80,10,10);
    ellipse(30,130,bubbleSize,bubbleSize)
    ellipse(100,180,15,15);
-   } else if(bubbleSize <= 19){
+   } else if(bubbleSize < 19){
     fill(baseColour); //blue bubbles
     stroke(baseColour);
     ellipse(140,19,bubbleSize - 8, bubbleSize - 8); //big bubble up top
@@ -76,11 +76,27 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
     ellipse(14,130,3,3); //small bubble BOTTOM LEFT
     ellipse(160,50,10,10);
     ellipse(110,40,15,15);
+   } else if(bubblesize = 19){
+    fill(baseColour); //blue bubbles
+    stroke(baseColour);
+    ellipse(140,19,bubbleSize - 8, bubbleSize - 8); //big bubble up top
+    ellipse(30,155,17,17); //big bubble down bottom LEFT
+    ellipse(75,183,bubbleSize - 15,bubbleSize - 15);
+    ellipse(90,20,3.5,3.5); //small bubble to the top
+    ellipse(14,130,3,3); //small bubble BOTTOM LEFT
+    noFill(); //clear bubbles
+    stroke(bubbleColour);
+    strokeWeight(1.4);
+    ellipse(50,165,bubbleSize,bubbleSize); //bottom left
+    ellipse(116,37,bubbleSize,bubbleSize); //top middle
+    ellipse(165,47,bubbleSize,bubbleSize); //top right
+    ellipse(100,80,10,10);
+    ellipse(30,130,bubbleSize,bubbleSize)
    }
   
 }
 
-function DrawJellyfish(headX,headY) {
+function DrawJellyfish(headX,headY) { //
 //head
 fill(baseColour); 
 stroke(baseColour);
@@ -91,14 +107,14 @@ stroke(baseColour);
 beginShape();
 vertex(headX,headY);
 quadraticVertex(headX,headY + 15,headX + 7,headY + 25);
-vertex(headX - 7,headY + 25)
-quadraticVertex(headX,headY + 14,headX,headY - 30)
+vertex(headX - 7,headY + 25);
+quadraticVertex(headX,headY + 14,headX,headY - 30);
 endShape(CLOSE);
 beginShape(); //bottom
 vertex(headX,headY+25);
 quadraticVertex(headX,headY + 45,headX + 7,headY + 55);
-vertex(headX - 7,headY + 55)
-quadraticVertex(headX,headY + 44,headX,headY)
+vertex(headX - 7,headY + 55);
+quadraticVertex(headX,headY + 44,headX,headY);
 endShape(CLOSE);
 //middle of head
 fill(shineColour);
