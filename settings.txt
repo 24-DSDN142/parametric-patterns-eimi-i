@@ -34,7 +34,7 @@ Wallpaper 2:
 //your parameter variables go here!
 let baseColour = [205,226,238]; // changes the base colour for jellyfish and regular filled bubbles
 let bubbleColour = [245, 203, 245]; // changes the colour for jellyfish highlights and the outline for clear bubble 
-let shineColour = [250, 229, 249]; // changes the colour of shines in background and the inside of jellyfish. (251,252,213)
+let shineColour = [250, 229, 249]; // changes the colour of shines in background and the inside of jellyfish. 
 let backgroundColour = [178,203,236]; //changes the colour of the background
 let hX = 45; //moves left jellyfish along the x axis
 let hY = 40; //moves the left jellyfish along the y axis
