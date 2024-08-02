@@ -1,29 +1,27 @@
 //your parameter variables go here!
-let baseColour = [183,203,246]; // changes the base colour for jellyfish and regular filled bubbles
-let bubbleColour = [245, 203, 245]; // changes the colour for jellyfish highlights and the outline for clear bubble 
-let shineColour = [219, 230, 255]; // changes the colour of shines in background and the inside of jellyfish.
-let backgroundColour = [63, 71, 104]; //changes the colour of the background
+let baseColour = [182, 163, 233]; // colour for jellyfish and bubble type 1
+let bubbleColour = [250, 245, 181]; // colour for highlights and bubble type 2
+let shineColour = [213, 201, 245]; // changes the colour of shines in background and the inside of jellyfish.
+let backgroundColour = [37, 34, 54]; //changes the colour of the background
 let hX = 45; //moves left jellyfish along the x axis
 let hY = 40; //moves the left jellyfish along the y axis
-let hx = 45; //moves the right jellyfish along the x axis
+let hx = 55; //moves the right jellyfish along the x axis
 let hy = 60; //moves the right jellyfish along the y axis
-let bubbleType = 19; //bubble pattern in the background
-let tentacleWidth = 3; //changes the width of jellyfish legs / tentacles
+let bubbleType = 19; //bubble pattern in the background 
+let tentacleWidth = 2; //changes the width of jellyfish legs / tentacles
 let LjellyfishAngle = -35;
-let RjellyfishAngle = 40;
+let RjellyfishAngle = 45;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.resolution(A3);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 190;
   pWallpaper.grid_settings.cell_height = 190;
-  pWallpaper.grid_settings.row_offset  = 100;
+  pWallpaper.grid_settings.row_offset  = 40;
 }
-
-
 
 function wallpaper_background() {
   background(backgroundColour); //dark muted blue colour
