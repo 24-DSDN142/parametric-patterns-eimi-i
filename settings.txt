@@ -1,6 +1,6 @@
 /////////////////////////////////
 
-Wallpaper 1: (og)
+Wallpaper 1: 
 
 //your parameter variables go here!
 let baseColour = [183,203,246]; // changes the base colour for jellyfish and regular filled bubbles
@@ -13,8 +13,8 @@ let hx = 45; //moves the right jellyfish along the x axis
 let hy = 60; //moves the right jellyfish along the y axis
 let bubbleType = 19; //bubble pattern in the background 
 let tentacleWidth = 3; //changes the width of jellyfish legs / tentacles
-let LjellyfishAngle = -35;
-let RjellyfishAngle = 40;
+let LjellyfishAngle = -35; //rotation of left jellyfish
+let RjellyfishAngle = 40; //rotation of right jellyfish
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -29,7 +29,7 @@ function setup_wallpaper(pWallpaper) {
 
 /////////////////////////////////
 
-Wallpaper 2: (light)
+Wallpaper 2: 
 
 //your parameter variables go here!
 let baseColour = [205,226,238]; // changes the base colour for jellyfish and regular filled bubbles
@@ -42,8 +42,8 @@ let hx = 55; //moves the right jellyfish along the x axis
 let hy = 60; //moves the right jellyfish along the y axis
 let bubbleType = 18; //bubble pattern in the background 
 let tentacleWidth = 2; //changes the width of jellyfish legs / tentacles
-let LjellyfishAngle = -35;
-let RjellyfishAngle = 45;
+let LjellyfishAngle = -35; //rotation of left jellyfish
+let RjellyfishAngle = 45; //rotation of right jellyfish
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -58,7 +58,7 @@ function setup_wallpaper(pWallpaper) {
 
 /////////////////////////////////
 
-Wallpaper 3: (green)
+Wallpaper 3: 
 
 //your parameter variables go here!
 let baseColour = [64, 121, 140]; // changes the base colour for jellyfish and regular filled bubbles
@@ -71,8 +71,8 @@ let hx = 65; //moves the right jellyfish along the x axis
 let hy = -90; //moves the right jellyfish along the y axis
 let bubbleType = 19; //bubble pattern in the background 
 let tentacleWidth = 1.5; //changes the width of jellyfish legs / tentacles
-let LjellyfishAngle = 10;
-let RjellyfishAngle = 145;
+let LjellyfishAngle = 10; //rotation of left jellyfish
+let RjellyfishAngle = 145; //rotation of right jellyfish
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -88,7 +88,7 @@ function setup_wallpaper(pWallpaper) {
 
 /////////////////////////////////
 
-Wallpaper 4: (blue)
+Wallpaper 4: 
 
 //your parameter variables go here!
 let baseColour = [255,197,225]; // changes the base colour for jellyfish and regular filled bubbles
@@ -101,8 +101,8 @@ let hx = 65; //moves the right jellyfish along the x axis
 let hy = -90; //moves the right jellyfish along the y axis
 let bubbleType = 20; //bubble pattern in the background 
 let tentacleWidth = 1.5; //changes the width of jellyfish legs / tentacles
-let LjellyfishAngle = 0;
-let RjellyfishAngle = 145;
+let LjellyfishAngle = 0; //rotation of left jellyfish
+let RjellyfishAngle = 145; //rotation of right jellyfish
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GLIDE_WALLPAPER);
@@ -117,7 +117,7 @@ function setup_wallpaper(pWallpaper) {
 
 /////////////////////////////////
 
-Wallpaper 5: (purple jellies)
+Wallpaper 5: 
 
 //your parameter variables go here!
 let baseColour = [182, 163, 233]; // colour for jellyfish and bubble type 1
@@ -130,8 +130,8 @@ let hx = 55; //moves the right jellyfish along the x axis
 let hy = 60; //moves the right jellyfish along the y axis
 let bubbleType = 19; //bubble pattern in the background 
 let tentacleWidth = 2; //changes the width of jellyfish legs / tentacles
-let LjellyfishAngle = -35;
-let RjellyfishAngle = 45;
+let LjellyfishAngle = -35; //rotation of left jellyfish
+let RjellyfishAngle = 45; //rotation of right jellyfish
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -146,7 +146,8 @@ function setup_wallpaper(pWallpaper) {
 
 /////////////////////////////////
 
-Wallpaper 6: (brown)
+Wallpaper 6: 
+
 //your parameter variables go here!
 let baseColour = [174, 163, 176]; // colour for jellyfish and bubble type 1
 let bubbleColour = [231, 230, 247]; // colour for highlights and bubble type 2
@@ -158,8 +159,8 @@ let hx = 0; //moves the right jellyfish along the x axis
 let hy = -115; //moves the right jellyfish along the y axis
 let bubbleType = 18; //bubble pattern in the background 
 let tentacleWidth = 2.5; //changes the width of jellyfish legs / tentacles
-let LjellyfishAngle = 0;
-let RjellyfishAngle = 180;
+let LjellyfishAngle = 0; //rotation of left jellyfish
+let RjellyfishAngle = 180; //rotation of right jellyfish
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -174,7 +175,7 @@ function setup_wallpaper(pWallpaper) {
 
 /////////////////////////////////
 
-Wallpaper 7: maroon
+Wallpaper 7: 
 
 //your parameter variables go here!
 let baseColour = [136,61,101]; // colour for jellyfish and bubble type 1
@@ -187,8 +188,8 @@ let hx = 5; //moves the right jellyfish along the x axis
 let hy = 80; //moves the right jellyfish along the y axis
 let bubbleType = 19; //bubble pattern in the background 
 let tentacleWidth = 2.5; //changes the width of jellyfish legs / tentacles
-let LjellyfishAngle = 0;
-let RjellyfishAngle = 0;
+let LjellyfishAngle = 0; //rotation of left jellyfish
+let RjellyfishAngle = 0; //rotation of right jellyfish
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -203,7 +204,7 @@ function setup_wallpaper(pWallpaper) {
 
 /////////////////////////////////
 
-Wallpaper 8: black white green
+Wallpaper 8: 
 
 //your parameter variables go here!
 let baseColour = [211, 208, 203]; // colour for jellyfish and bubble type 1
@@ -216,8 +217,8 @@ let hx = 55; //moves the right jellyfish along the x axis
 let hy = -90; //moves the right jellyfish along the y axis
 let bubbleType = 20; //bubble pattern in the background 
 let tentacleWidth = 2; //changes the width of jellyfish legs / tentacles
-let LjellyfishAngle = -35;
-let RjellyfishAngle = 145;
+let LjellyfishAngle = -35; //rotation of left jellyfish
+let RjellyfishAngle = 145; //rotation of right jellyfish
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -232,7 +233,7 @@ function setup_wallpaper(pWallpaper) {
 
 /////////////////////////////////
 
-Wallpaper 9: dark purples
+Wallpaper 9: 
 
 //your parameter variables go here!
 let baseColour = [144, 85, 162]; // changes the base colour for jellyfish and regular filled bubbles
@@ -245,8 +246,8 @@ let hx = -90; //moves the right jellyfish along the x axis
 let hy = 20; //moves the right jellyfish along the y axis
 let bubbleType = 20; //bubble pattern in the background 
 let tentacleWidth = 2; //changes the width of jellyfish legs / tentacles
-let LjellyfishAngle = 115;
-let RjellyfishAngle = -60;
+let LjellyfishAngle = 115; //rotation of left jellyfish
+let RjellyfishAngle = -60; //rotation of right jellyfish
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
