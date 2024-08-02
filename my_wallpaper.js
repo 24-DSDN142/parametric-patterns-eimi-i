@@ -57,7 +57,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   ellipse(19, 100, 10, 1.5);
   ellipse(19, 100, 1.5, 15); 
 
-   if(bubbleType > 19){ //If bubbleType var is bigger than 19, (20) then changes the arrangement of background bubbles to only be filled bubbles
+   if(bubbleType > 19){ //If bubbleType var is bigger than 19, (eg. 20) then changes the arrangement of background bubbles to only be clear bubbles
    noFill(); //makes clear bubbles same colour as jellyfish highlights
    stroke(bubbleColour);
    strokeWeight(1.4);
@@ -67,7 +67,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
    ellipse(100, 80, 10, 10);
    ellipse(30, 130, 20, 20)
    ellipse(100, 180, 15, 15);
-   } else if(bubbleType < 19){ //If bubbleType var is smaller than 19, (18) then changes the arrangement of background bubbles to only be clear bubbles
+   } else if(bubbleType < 19){ //If bubbleType var is smaller than 19, (eg. 18) then changes the arrangement of background bubbles to only be filled bubbles
     fill(baseColour); //makes filled bubbles same colour as the base of the jellyfish
     stroke(baseColour);
     ellipse(140, 19, 10, 10); 
