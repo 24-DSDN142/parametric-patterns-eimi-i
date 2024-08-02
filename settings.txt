@@ -11,7 +11,7 @@ let hX = 45; //moves left jellyfish along the x axis
 let hY = 40; //moves the left jellyfish along the y axis
 let hx = 45; //moves the right jellyfish along the x axis
 let hy = 60; //moves the right jellyfish along the y axis
-let bubbleSize = 19; //bubble size for both bubble types 
+let bubbleType = 19; //bubble size for both bubble types 
 let tentacleWidth = 3; //changes the width of jellyfish legs / tentacles
 let LjellyfishAngle = -35;
 let RjellyfishAngle = 40;
@@ -40,7 +40,7 @@ let hX = 45; //moves left jellyfish along the x axis
 let hY = 40; //moves the left jellyfish along the y axis
 let hx = 55; //moves the right jellyfish along the x axis
 let hy = 60; //moves the right jellyfish along the y axis
-let bubbleSize = 18; //bubble size for both bubble types 
+let bubbleType = 18; //bubble size for both bubble types 
 let tentacleWidth = 2; //changes the width of jellyfish legs / tentacles
 let LjellyfishAngle = -35;
 let RjellyfishAngle = 45;
@@ -69,7 +69,7 @@ let hX = 67; //moves left jellyfish along the x axis
 let hY = 20; //moves the left jellyfish along the y axis
 let hx = 65; //moves the right jellyfish along the x axis
 let hy = -90; //moves the right jellyfish along the y axis
-let bubbleSize = 19; //bubble size for both bubble types 
+let bubbleType = 19; //bubble size for both bubble types 
 let tentacleWidth = 1.5; //changes the width of jellyfish legs / tentacles
 let LjellyfishAngle = 10;
 let RjellyfishAngle = 145;
@@ -99,20 +99,20 @@ let hX = 67; //moves left jellyfish along the x axis
 let hY = 10; //moves the left jellyfish along the y axis
 let hx = 65; //moves the right jellyfish along the x axis
 let hy = -90; //moves the right jellyfish along the y axis
-let bubbleSize = 20; //bubble size for both bubble types 
+let bubbleType = 20; //bubble size for both bubble types 
 let tentacleWidth = 1.5; //changes the width of jellyfish legs / tentacles
 let LjellyfishAngle = 0;
 let RjellyfishAngle = 145;
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
   pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 190;
   pWallpaper.grid_settings.cell_height = 190;
-  pWallpaper.grid_settings.row_offset  = 80;
+  pWallpaper.grid_settings.row_offset  = 100;
 }
 
 /////////////////////////////////
@@ -128,7 +128,7 @@ let hX = 45; //moves left jellyfish along the x axis
 let hY = 40; //moves the left jellyfish along the y axis
 let hx = 55; //moves the right jellyfish along the x axis
 let hy = 60; //moves the right jellyfish along the y axis
-let bubbleSize = 19; //bubble size for both bubble types 
+let bubbleType = 19; //bubble size for both bubble types 
 let tentacleWidth = 2; //changes the width of jellyfish legs / tentacles
 let LjellyfishAngle = -35;
 let RjellyfishAngle = 45;
@@ -156,7 +156,7 @@ let hX = 87; //moves left jellyfish along the x axis
 let hY = 10; //moves the left jellyfish along the y axis
 let hx = 0; //moves the right jellyfish along the x axis
 let hy = -115; //moves the right jellyfish along the y axis
-let bubbleSize = 18; //bubble size for both bubble types 
+let bubbleType = 18; //bubble size for both bubble types 
 let tentacleWidth = 2.5; //changes the width of jellyfish legs / tentacles
 let LjellyfishAngle = 0;
 let RjellyfishAngle = 180;
@@ -185,7 +185,7 @@ let hX = 85; //moves left jellyfish along the x axis
 let hY = 10; //moves the left jellyfish along the y axis
 let hx = 5; //moves the right jellyfish along the x axis
 let hy = 80; //moves the right jellyfish along the y axis
-let bubbleSize = 19; //bubble size for both bubble types 
+let bubbleType = 19; //bubble size for both bubble types 
 let tentacleWidth = 2.5; //changes the width of jellyfish legs / tentacles
 let LjellyfishAngle = 0;
 let RjellyfishAngle = 0;
@@ -214,7 +214,7 @@ let hX = 45; //moves left jellyfish along the x axis
 let hY = 40; //moves the left jellyfish along the y axis
 let hx = 55; //moves the right jellyfish along the x axis
 let hy = -90; //moves the right jellyfish along the y axis
-let bubbleSize = 20; //bubble size for both bubble types 
+let bubbleType = 20; //bubble size for both bubble types 
 let tentacleWidth = 2; //changes the width of jellyfish legs / tentacles
 let LjellyfishAngle = -35;
 let RjellyfishAngle = 145;
@@ -243,7 +243,7 @@ let hX = -15; //moves left jellyfish along the x axis
 let hY = -110; //moves the left jellyfish along the y axis
 let hx = -90; //moves the right jellyfish along the x axis
 let hy = 20; //moves the right jellyfish along the y axis
-let bubbleSize = 20; //bubble size for both bubble types 
+let bubbleType = 20; //bubble size for both bubble types 
 let tentacleWidth = 2; //changes the width of jellyfish legs / tentacles
 let LjellyfishAngle = 115;
 let RjellyfishAngle = -60;
